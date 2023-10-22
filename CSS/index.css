@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+*{/*Zerar valores e aplicar fonte padrão (Tauri)*/
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: none;
+font-family: "Tauri";
+}
+
+/*Inicio header*/
+header{ 
+  background-color: #0476D9;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img.Logo{
+  width: 10rem;
+
+}
+
+ul.header{
+  display: flex;
+  align-items: center;
+}
+
+li.header{
+  list-style-type: none;
+  margin-left: 1rem;
+}
+a.header{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+input{
+  height: 2.5rem;
+  width: 28rem;
+  align-self: center;
+  border-radius: 50px;
+  border: none;
+  margin-left: 2rem;
+}
+input::placeholder {/*Customizar place holder do input*/
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 0.5;
+  color: black;
+  padding-left: 1rem;
+}
+img.button{/* Imagem Botão Cadastro e Login*/
+  height: 40px;
+  align-self: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+button.in_out{ /*Botão Login*/
+  height: 3rem;
+  width: fit-content;
+  align-self: center;
+  border-radius: 15px;
+  background-color: #FFD056;
+  border: none;
+  display: flex;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+button.in_out_dois{/*Botão Cadastro*/
+  height: 3rem;
+  width: fit-content;
+  align-self: center;
+  border-radius: 15px;
+  background-color: #FFD056;
+  border: none;
+  display: flex;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+h4.button{/*Texto Botão Cadastro e Login*/
+  font-size: 1rem;
+  align-self: center;
+  margin-right: 1rem;
+}
+button.carrinho{/*Botão carrinho*/
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: flex-end;
+  margin-left: 2rem;
+}
+img.carrinho{/*Imagem Botão carrinho*/
+  width: 3rem;
+  height: 3rem;
+}
+div.button{/*Botoões de Login, Cadastro e Carrinho*/
+  display: flex;
+  white-space: nowrap;
+}
+/*Vambora pra responsividade XD*/
+@media (max-width: 373px) {
+  header{
+    width: 100%;
+  }
+}
+@media (max-width: 420px) and (min-width: 390px) {
+  a.header{
+      color: white;
+      text-decoration: none;
+      font-size: 1.28rem;
+  }
+  input{
+      height: 2.5rem;
+      width: 28rem;
+      align-self: center;
+      border-radius: 50px;
+      border: none;
+      margin-left: 2rem;
+      margin-top: 1rem;
+  }
+    button.carrinho{
+      width: 2.7rem;
+      height: 2.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: white;
+      border-radius: 15px;
+      align-self: center;
+      justify-self: flex-end;
+      margin-left: 1rem;
+    }
+    img.button{
+      height: 25px;
+      align-self: center;
+      margin-right: 1rem;
+      margin-left: 1rem;
+  }
+  h4.button{/*Texto Botão Cadastro e Login*/
+      font-size: 1rem;
+      align-self: center;
+      margin-right: 1rem;
+    }
+    img.carrinho{/*Imagem Botão carrinho*/
+      width: 2rem;
+      height: 2rem;
+    }
+}
+@media (max-width: 389px) and (min-width: 350px) {
+a.header{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+input{
+    height: 2.5rem;
+    width: 28rem;
+    align-self: center;
+    border-radius: 50px;
+    border: none;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+  button.carrinho{
+    width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: flex-end;
+    margin-left: 1rem;
+  }
+  img.button{
+    height: 25px;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+h4.button{/*Texto Botão Cadastro e Login*/
+    font-size: 1rem;
+    align-self: center;
+    margin-right: 1rem;
+  }
+  img.carrinho{/*Imagem Botão carrinho*/
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 929px){
+button.carrinho{/*Botão carrinho*/
+  margin-left: 1rem;
+}
+button.in_out{ /*Botão Login*/
+  margin-left: 1rem;
+}
+input{
+  margin-top: 1rem;
+}
+div.button{
+  margin-top: 1rem;
+}
+}
+/*Fim header*/
+
+  /*Inicio corpo do texto*/
+  a{
+    text-decoration: none;
+}
+.Slider{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;  
+   align-items: center;
+   margin: 50px 0px;
+   justify-self: center;
+   width: 75%;
+}
+.Titulo{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 2px solid rgb(0, 0,0,0.08);
+    border-radius: 10px;
+    margin: 0px 20px;
+    transition-duration: 0.5s;
+}
+.Card:hover{
+    transform: translateY(-10px);
+}
+.Imagem_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.Imagem a,Imagem{
+    width: 100%;
+    height: 100%;
+    display: flex;    
+}
+.Imagem a img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+.Nome_Produto,.preco{
+    text-align: center
+}
+.Nome_Produto{
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+.preco{
+    font-size: 1.5rem;
+}
+.primeiro{
+    margin-top: 0.3rem;
+}
+div.Comprar_Agora{
+    background-color: #FFD056;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+h2.Comprar_Agora{
+    text-align: center;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+button.Comprar_Agora{
+    border: none;
+    background-color: transparent;
+    border-radius: 25px;
+    width: 100%;
+}
+div.videos{
+    display: flex;
+    justify-content: center;
+    width:90%
+}
+.Titulo{
+    margin-bottom: 1rem;
+}
+img.filtro,.filtro2,.filtro3,.filtro4,.filtro5,.filtro6{
+  width: 8rem;
+  margin-right: 1rem;
+}
+div.iframes{
+display: flex;
+justify-content: center;
+}
+iframe{
+  margin-left: 2rem;
+  border-radius: 10px;
+}
+div.filtro{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+div#filtro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  
+}
+h5{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+@media (min-width:350px) and (max-width:450px){
+  iframe.video2,iframe.video3{
+    display: none;
+  }
+  img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
+    width: 5rem;
+  }
+  img.filtro5,h5.apagar{
+    display: none;
+  }
+  h5{
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  }
+  @media (min-width:1000px) and (max-width:1300px){
+    img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
+      width: 6.25rem;
+    }
+    img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
+      width: 7.5rem;
+    }
+    h5{
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+/*Fim corpo do site*/
+
+/*Inicio footer*/
+footer{ 
+  background-color: #0476D9;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+img.Rede_Social{
+  width: 4rem;
+  margin-left: 4rem;
+}
+div.Logos{
+  display: flex;
+  justify-content: space-evenly;
+}
+img.Rede_Social{
+  width: 5rem;
+}
+h3.footer,h2.footer{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+ul.footer{
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+li.footer{
+  margin-right: 5rem;
+}
+.ultimo{
+  margin-right: 5rem;
+}
+.penultimo{
+  margin-right: 5rem;
+}
+a.footer{
+  text-decoration: none;
+}
+div.anchors{
+  display: flex;
+}
+@media (min-width: 1000px){
+ 
+}
+@media (max-width: 900px) and (min-width:701px){
+  ul.footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+  div.anchors{
+      justify-self: center;
+      margin-top: 0.5rem;
+  }
+}
+@media (max-width: 700px) and (min-width:500px) {
+  
+}
+@media (min-width : 350px) and (max-width: 400px) {
+  ul.footer{
+    justify-content: center;
+   }
+   h2.footer{
+    font-size: 1rem;
+   }
+   li.footer{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+   }
+   .ultimo{
+    margin-right: 0px;
+   }
+   .penultimo{
+    margin-right: 0px;
+   }
+   div.anchors{
+    justify-self: center;
+    margin-top: 0.5rem;
+  }
+  img.Rede_Social{
+    width: 4rem;
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 450px) and (min-width:400px) {
+ ul.footer{
+  justify-content: center;
+ }
+ h2.footer{
+  font-size: 1rem;
+ }
+ li.footer{
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+ }
+ .ultimo{
+  margin-right: 0px;
+ }
+ .penultimo{
+  margin-right: 0px;
+ }
+ div.anchors{
+  justify-self: center;
+  margin-top: 0.5rem;
+}
+img.Rede_Social{
+  width: 4rem;
+  margin-left: 4rem;
+}
+}
+/*Fim Fotter*/
