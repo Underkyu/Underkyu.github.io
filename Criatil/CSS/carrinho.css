@@ -1,0 +1,441 @@
+/* css do carrinho */
+body {
+  font-family: "Tauri", sans-serif;
+  background-color: #F4F4F4;
+  margin: 0;
+  padding: 0;
+}
+
+.conteudo-carrinho {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+}
+
+.item-produto {
+  border: 3px solid black;
+  width: 100%;
+  background-color: #EAEAEA;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.detalhes-produto {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.imagem-produto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 2px solid #2c5274;
+}
+.info-produto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-left: 0;
+}
+.produtos {
+  max-height:max-content;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.info-produto p {
+  font-size: 1.03rem;
+  font-weight:bold;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.info-produto {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin: 25px;
+}
+.cancelar {
+  position: absolute;
+  top: 75%;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.painel-lateral {
+  width: 300px;
+  background-color: #0476D9;
+  border: 3px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 20px;
+}
+@media(max-width: 1243px) {
+  .info-produto {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media(max-width: 950px) and (min-width: 661px) {
+  .info-produto, .info-produto p, .info-produto h3 {
+    font-size: 0.9rem;
+  }
+}
+@media(max-width: 800px) {
+  .detalhes-produto {
+    flex-direction: column;
+  }
+}
+@media(max-width: 800px) {
+  .detalhes-produto, .imagem-produto  {
+    align-items: center;
+  }
+}
+@media(max-width: 660px) {
+  .conteudo-carrinho {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-produto {
+    width: 100%;
+  }
+  .painel-lateral {
+    width:90%;
+  }
+}
+@media(max-width: 460px) {
+  .info-produto, .info-produto p, .info-produto h3 {
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.caixa-input label,
+.caixa-input input {
+  display: block;
+  margin-bottom: 10px;
+  width:90%;
+}
+
+.botao-amarelo {
+  background-color: #FFD056;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.caixa-resumo {
+  font-weight: bold;
+  color: black;
+}
+div.produto{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* fim do css do carrinho */
+
+
+/* css do footer*/
+footer{ 
+  background-color: #0476D9;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20vh;
+}
+img.Rede_Social{
+  width: 4rem;
+  margin-left: 4rem;
+}
+div.Logos{
+  display: flex;
+  justify-content: space-evenly;
+}
+img.Rede_Social{
+  width: 5rem;
+}
+h3.footer,h2.footer{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+ul.footer{
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+li.footer{
+  margin-right: 5rem;
+}
+.ultimo{
+  margin-right: 5rem;
+}
+a.footer{
+  text-decoration: none;
+}
+div.anchors{
+  display: flex;
+}
+@media (min-width: 1000px){
+ 
+}
+@media (max-width: 900px) and (min-width:701px){
+ 
+}
+@media (max-width: 700px) and (min-width:500px) {
+  
+}
+@media (min-width : 350px) and (max-width: 400px) {
+  
+}
+@media (max-width: 450px) and (min-width:400px) {
+ ul.footer{
+  justify-content: center;
+ }
+ h2.footer{
+  font-size: 1rem;
+ }
+ li.footer{
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+ }
+ .ultimo{
+  margin-right: 0px;
+ }
+ .penultimo{
+  margin-right: 0px;
+ }
+}
+/* fim do css do footer
+
+   css do header: */
+   header{ 
+    background-color: #0476D9;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img.Logo{
+    width: 10rem;
+
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 1rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+input{
+    height: 2.5rem;
+    width: 28rem;
+    align-self: center;
+    border-radius: 50px;
+    border: none;
+    margin-left: 2rem;
+}
+input::placeholder {/*Customizar place holder do input*/
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.5;
+    color: black;
+    padding-left: 1rem;
+  }
+img.button{/* Imagem Botão Cadastro e Login*/
+    height: 40px;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+  button.in_out{ /*Botão Login*/
+    height: 3rem;
+    width: fit-content;
+    align-self: center;
+    border-radius: 15px;
+    background-color: #FFD056;
+    border: none;
+    display: flex;
+    margin-left: 3rem;
+    cursor: pointer;
+  }
+  button.in_out_dois{/*Botão Cadastro*/
+    height: 3rem;
+    width: fit-content;
+    align-self: center;
+    border-radius: 15px;
+    background-color: #FFD056;
+    border: none;
+    display: flex;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  h4.button{/*Texto Botão Cadastro e Login*/
+    font-size: 1rem;
+    align-self: center;
+    margin-right: 1rem;
+  }
+  button.carrinho{/*Botão carrinho*/
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: flex-end;
+    margin-left: 2rem;
+  }
+  img.carrinho{/*Imagem Botão carrinho*/
+    width: 3rem;
+    height: 3rem;
+  }
+  div.button{/*Botoões de Login, Cadastro e Carrinho*/
+    display: flex;
+    white-space: nowrap;
+  }
+  /*Vambora pra responsividade XD*/
+  @media (max-width: 373px) {
+    header{
+      width: 100%;
+    }
+  }
+@media (max-width: 420px) and (min-width: 390px) {
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.28rem;
+    }
+    input{
+        height: 2.5rem;
+        width: 28rem;
+        align-self: center;
+        border-radius: 50px;
+        border: none;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+      button.carrinho{
+        width: 2.7rem;
+        height: 2.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: white;
+        border-radius: 15px;
+        align-self: center;
+        justify-self: flex-end;
+        margin-left: 1rem;
+      }
+      img.button{
+        height: 25px;
+        align-self: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    h4.button{/*Texto Botão Cadastro e Login*/
+        font-size: 1rem;
+        align-self: center;
+        margin-right: 1rem;
+      }
+      img.carrinho{/*Imagem Botão carrinho*/
+        width: 2rem;
+        height: 2rem;
+      }
+}
+@media (max-width: 389px) and (min-width: 350px) {
+  a{
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+  }
+  input{
+      height: 2.5rem;
+      width: 28rem;
+      align-self: center;
+      border-radius: 50px;
+      border: none;
+      margin-left: 2rem;
+      margin-top: 1rem;
+  }
+    button.carrinho{
+      width: 2.7rem;
+      height: 2.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: white;
+      border-radius: 15px;
+      align-self: center;
+      justify-self: flex-end;
+      margin-left: 1rem;
+    }
+    img.button{
+      height: 25px;
+      align-self: center;
+      margin-right: 1rem;
+      margin-left: 1rem;
+  }
+  h4.button{/*Texto Botão Cadastro e Login*/
+      font-size: 1rem;
+      align-self: center;
+      margin-right: 1rem;
+    }
+    img.carrinho{/*Imagem Botão carrinho*/
+      width: 2rem;
+      height: 2rem;
+    }
+}
+@media (max-width: 929px){
+  button.carrinho{/*Botão carrinho*/
+    margin-left: 1rem;
+  }
+  button.in_out{ /*Botão Login*/
+    margin-left: 1rem;
+  }
+  input{
+    margin-top: 1rem;
+  }
+  div.button{
+    margin-top: 1rem;
+  }
+}
+  /*Fim header*/

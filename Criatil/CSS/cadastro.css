@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+*{/*Zerar valores e aplicar fonte padrão (Tauri)*/
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: none;
+font-family: "Tauri";
+}
+
+/*Inicio footer*/
+footer{ 
+  background-color: #0476D9;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+img.Rede_Social{
+  width: 4rem;
+  margin-left: 4rem;
+}
+div.Logos{
+  display: flex;
+  justify-content: space-evenly;
+}
+img.Rede_Social{
+  width: 5rem;
+}
+h3.footer,h2.footer{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+ul.footer{
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+li.footer{
+  margin-right: 5rem;
+}
+.ultimo{
+  margin-right: 5rem;
+}
+.penultimo{
+  margin-right: 5rem;
+}
+a.footer{
+  text-decoration: none;
+}
+div.anchors{
+  display: flex;
+}
+@media (min-width: 1000px){
+ 
+}
+@media (max-width: 900px) and (min-width:701px){
+  ul.footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+  div.anchors{
+      justify-self: center;
+      margin-top: 0.5rem;
+  }
+}
+@media (max-width: 700px) and (min-width:500px) {
+  
+}
+@media (min-width : 350px) and (max-width: 400px) {
+  ul.footer{
+    justify-content: center;
+   }
+   h2.footer{
+    font-size: 1rem;
+   }
+   li.footer{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+   }
+   .ultimo{
+    margin-right: 0px;
+   }
+   .penultimo{
+    margin-right: 0px;
+   }
+   div.anchors{
+    justify-self: center;
+    margin-top: 0.5rem;
+  }
+  img.Rede_Social{
+    width: 4rem;
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 450px) and (min-width:400px) {
+ ul.footer{
+  justify-content: center;
+ }
+ h2.footer{
+  font-size: 1rem;
+ }
+ li.footer{
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+ }
+ .ultimo{
+  margin-right: 0px;
+ }
+ .penultimo{
+  margin-right: 0px;
+ }
+ div.anchors{
+  justify-self: center;
+  margin-top: 0.5rem;
+}
+img.Rede_Social{
+  width: 4rem;
+  margin-left: 4rem;
+}
+}
+/*Fim Fotter*/
+
+/*
+   css do header: */
+   header{ 
+    background-color: #0476D9;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  img.Logo{
+    width: 10rem;
+  
+  }
+  
+  ul.header{
+    display: flex;
+    align-items: center;
+  }
+  
+  li.header{
+    list-style-type: none;
+    margin-left: 1rem;
+  }
+  a.header{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  input{
+    height: 2.5rem;
+    width: 28rem;
+    align-self: center;
+    border-radius: 50px;
+    border: none;
+    margin-left: 2rem;
+  }
+  input::placeholder {/*Customizar place holder do input*/
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.5;
+    color: black;
+    padding-left: 1rem;
+  }
+  img.button{/* Imagem Botão Cadastro e Login*/
+    height: 40px;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  button.in_out{ /*Botão Login*/
+    height: 3rem;
+    width: fit-content;
+    align-self: center;
+    border-radius: 15px;
+    background-color: #FFD056;
+    border: none;
+    display: flex;
+    margin-left: 3rem;
+    cursor: pointer;
+  }
+  button.in_out_dois{/*Botão Cadastro*/
+    height: 3rem;
+    width: fit-content;
+    align-self: center;
+    border-radius: 15px;
+    background-color: #FFD056;
+    border: none;
+    display: flex;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  h4.button{/*Texto Botão Cadastro e Login*/
+    font-size: 1rem;
+    align-self: center;
+    margin-right: 1rem;
+  }
+  button.carrinho{/*Botão carrinho*/
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: flex-end;
+    margin-left: 2rem;
+  }
+  img.carrinho{/*Imagem Botão carrinho*/
+    width: 3rem;
+    height: 3rem;
+  }
+  div.button{/*Botoões de Login, Cadastro e Carrinho*/
+    display: flex;
+    white-space: nowrap;
+  }
+  /*Vambora pra responsividade XD*/
+  @media (max-width: 373px) {
+    header{
+      width: 100%;
+    }
+  }
+  @media (max-width: 420px) and (min-width: 390px) {
+    a.header{
+        color: white;
+        text-decoration: none;
+        font-size: 1.28rem;
+    }
+    input{
+        height: 2.5rem;
+        width: 28rem;
+        align-self: center;
+        border-radius: 50px;
+        border: none;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+      button.carrinho{
+        width: 2.7rem;
+        height: 2.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: white;
+        border-radius: 15px;
+        align-self: center;
+        justify-self: flex-end;
+        margin-left: 1rem;
+      }
+      img.button{
+        height: 25px;
+        align-self: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    h4.button{/*Texto Botão Cadastro e Login*/
+        font-size: 1rem;
+        align-self: center;
+        margin-right: 1rem;
+      }
+      img.carrinho{/*Imagem Botão carrinho*/
+        width: 2rem;
+        height: 2rem;
+      }
+  }
+  @media (max-width: 389px) and (min-width: 350px) {
+  a.header{
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+  }
+  input{
+      height: 2.5rem;
+      width: 28rem;
+      align-self: center;
+      border-radius: 50px;
+      border: none;
+      margin-left: 2rem;
+      margin-top: 1rem;
+  }
+    button.carrinho{
+      width: 2.7rem;
+      height: 2.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: white;
+      border-radius: 15px;
+      align-self: center;
+      justify-self: flex-end;
+      margin-left: 1rem;
+    }
+    img.button{
+      height: 25px;
+      align-self: center;
+      margin-right: 1rem;
+      margin-left: 1rem;
+  }
+  h4.button{/*Texto Botão Cadastro e Login*/
+      font-size: 1rem;
+      align-self: center;
+      margin-right: 1rem;
+    }
+    img.carrinho{/*Imagem Botão carrinho*/
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  @media (max-width: 929px){
+  button.carrinho{/*Botão carrinho*/
+    margin-left: 1rem;
+  }
+  button.in_out{ /*Botão Login*/
+    margin-left: 1rem;
+  }
+  input{
+    margin-top: 1rem;
+  }
+  div.button{
+    margin-top: 1rem;
+  }
+  }
+  /*Fim header*/
+
+  /* css do cadastro */
+  body {
+    font-family: "Tauri", sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro-container {
+    display:block;
+    align-items: center;
+    background-color: #0476D9;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px solid black;
+}
+.cadastro-container input {
+    margin-bottom: 10px;
+    width: 90%;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: 2px solid black;
+    box-sizing: border-box;
+    text-indent: 5px;
+    letter-spacing: 0;
+}
+.cadastro-container h3 {
+    font-size: 2rem;
+    font-weight:bold;
+    margin: 40px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.cadastro-container .Logo {
+    width: 180px;
+    height: 130px;
+    float: left;
+    margin-right: 20px; /* espaço de margem à direita */
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cadastro-container button {
+        background-color: #FFD056;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+        border: 2px solid black;
+}
+.cadastro-container form {
+    margin-right: 10%;
+}
+/* responsividade: */
+@media(max-width: 485px) {
+    .cadastro-container h3 {
+        font-size: 1.7rem;
+        margin-left: 0;
+    }
+    .cadastro-container .Logo {
+        width: 170px;
+        height: 120px;
+        margin-right: 0px;
+    }
+}
+@media(max-width: 420px) {
+    .cadastro-container h3 {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 390px) {
+    .cadastro-container h3 {
+        font-size: 1.2rem;
+    }
+    .cadastro-container .Logo {
+        width: 160px;
+        height: 120px;
+        margin-right: 10px;
+        margin: 0;
+    }
+    .cadastro-container input {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .cadastro-container {
+        margin: 10px;
+    }
+}
+@media(max-width: 330px) {
+    .cadastro-container h3 {
+        font-size: 1.3rem;
+    }
+    .cadastro-container .Logo {
+        width: 140px;
+        height: 100px;
+        
+    }
+}
