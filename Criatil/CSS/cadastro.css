@@ -96,6 +96,10 @@ div.anchors{
     width: 4rem;
     margin-left: 4rem;
   }
+  div.corpo{
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 450px) and (min-width:400px) {
  ul.footer{
@@ -224,6 +228,7 @@ img.Rede_Social{
   div.button{/*Botoões de Login, Cadastro e Carrinho*/
     display: flex;
     white-space: nowrap;
+    align-self: center;
   }
   /*Vambora pra responsividade XD*/
   @media (max-width: 373px) {

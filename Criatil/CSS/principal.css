@@ -111,6 +111,7 @@ img.carrinho{/*Imagem Botão carrinho*/
 div.button{/*Botoões de Login, Cadastro e Carrinho*/
   display: flex;
   white-space: nowrap;
+  align-self: center;
 }
 /*Vambora pra responsividade XD*/
 @media (max-width: 373px) {
@@ -352,9 +353,6 @@ h5{
   }
   img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
     width: 5rem;
-  }
-  img.filtro5,h5.apagar{
-    display: none;
   }
   h5{
     font-size: 1rem;

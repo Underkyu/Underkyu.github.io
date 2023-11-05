@@ -329,6 +329,7 @@ img.button{/* Imagem Botão Cadastro e Login*/
   div.button{/*Botoões de Login, Cadastro e Carrinho*/
     display: flex;
     white-space: nowrap;
+    align-self: center;
   }
   /*Vambora pra responsividade XD*/
   @media (max-width: 373px) {

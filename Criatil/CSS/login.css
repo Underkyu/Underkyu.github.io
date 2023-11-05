@@ -224,6 +224,7 @@ img.Rede_Social{
   div.button{/*Botoões de Login, Cadastro e Carrinho*/
     display: flex;
     white-space: nowrap;
+    align-self: center;
   }
   /*Vambora pra responsividade XD*/
   @media (max-width: 373px) {
@@ -420,7 +421,25 @@ div.opcoes input[type="checkbox"] {
   width: 12px;
   height: 12px;
 }
-/* responsividade: */
+.corpo{
+  margin-bottom: 10rem;
+}
+.Esqueceu{
+  text-decoration: none;
+  color: white;
+}
+.Esqueceu:hover{
+  text-decoration: underline;
+}
+.Lembrar{
+  color: white;
+}
+input[type=radio], input[type=checkbox] {
+  border: 0px;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
 @media(max-width: 485px) {
     .cadastro-container h3 {
         font-size: 1.7rem;
@@ -453,6 +472,10 @@ div.opcoes input[type="checkbox"] {
     }
     .cadastro-container {
         margin: 10px;
+    }
+    div.corpo{
+      display: flex;
+      justify-content: center;
     }
 }
 @media(max-width: 330px) {
