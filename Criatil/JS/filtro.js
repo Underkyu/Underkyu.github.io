@@ -13,14 +13,13 @@ function adicionarItens() {
             <div class="Imagem_container">
                 <div class="Imagem">
                     <a href="#">
-                        <img src="Imagens/Centro/Ralsei.jpeg" alt="Pelúcia Ralse" class="Imagem_produto">
+                        <img src="Imagens/Centro/AlfabetoLibras.png" alt="Alfabeto em Libras" class="Imagem_produto">
                     </a>
                 </div>
             </div>
             <!--Texto do card-->
-            <h1 class="Nome_Produto">Pelúcia Ralsei</h1>
-            <p class="preco primeiro"><s>R$99,99</s></p>
-            <p class="preco">R$89,99</p>
+            <h1 class="Nome_Produto">Alfabeto em libras</h1>
+            <p class="preco">R$39,99</p>
             <!--Botão "Comprar agora"-->
             <div class="Comprar_Agora primeiro">
                 <button class="Comprar_Agora">
