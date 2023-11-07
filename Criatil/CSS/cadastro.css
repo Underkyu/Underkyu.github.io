@@ -53,6 +53,12 @@ a.footer{
 div.anchors{
   display: flex;
 }
+div.corpo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5.5rem;
+  margin-top: 5.5rem;
+}
 @media (min-width: 1000px){
  
 }
@@ -141,10 +147,13 @@ img.Rede_Social{
   }
   
   img.Logo{
-    width: 10rem;
+    width: 9.87rem;
   
   }
   
+  a{
+    text-decoration: none;
+  }
   ul.header{
     display: flex;
     align-items: center;
