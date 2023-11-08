@@ -437,6 +437,7 @@ div.anchors {
     height: 100%;
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 .Imagem a{
     width: 100%;
@@ -542,4 +543,20 @@ button:hover{
 }
 a{
   text-decoration: none;
+}
+.imagem_selo {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  height: auto;
+  width: 30%;
+  z-index: 1;
+}
+.imagem_selodesc {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  height: auto;
+  width: 30%;
+  z-index: 1;
 }

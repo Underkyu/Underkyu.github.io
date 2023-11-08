@@ -8,23 +8,26 @@ function adicionarItens() {
 
         // Aqui você pode adicionar o conteúdo desejado para cada novo item
         novoItem.innerHTML = `
+        <!--Card-->
         <div class="Card">
             <!--Imagem-->
             <div class="Imagem_container">
                 <div class="Imagem">
-                    <a href="#">
-                        <img src="Imagens/Centro/AlfabetoLibras.png" alt="Alfabeto em Libras" class="Imagem_produto">
+                    <a href="produtos.html">
+                    <img src="Imagens/Centro/AlfabetoLibras.png" alt="Ralsei plush" class="Imagem_produto">
                     </a>
+                    <div class="div_selo">
+                        <img src="Imagens/Centro/Selos/selo final ouvido.png" class="imagem_selo">
+                    </div>
                 </div>
             </div>
             <!--Texto do card-->
             <h1 class="Nome_Produto">Alfabeto em libras</h1>
+            <br>
             <p class="preco">R$39,99</p>
             <!--Botão "Comprar agora"-->
             <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora">
-                    <h2 class="Comprar_Agora">Comprar Agora</h2>
-                </button>
+                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
             </div>
         </div>
     `;
