@@ -182,6 +182,7 @@ div.produto{
 
 /*Inicio footer*/
 footer {
+  margin-top: 18%;
   background-color: #0476D9;
   width: 100%;
   display: flex;
