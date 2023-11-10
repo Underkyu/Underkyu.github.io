@@ -504,7 +504,7 @@ div.anchors {
   display: flex;
 }
 div.corpo{
-  margin-bottom: 10rem;
+  margin-bottom: 12%;
 }
 
 @media (min-width: 1000px) {}
