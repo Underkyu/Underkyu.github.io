@@ -9,7 +9,8 @@ font-family: "Tauri";
 }
 
 /*Inicio footer*/
-footer{ 
+footer{
+  margin-top: 17.5%; 
   background-color: #0476D9;
   width: 100%;
   display: flex;
