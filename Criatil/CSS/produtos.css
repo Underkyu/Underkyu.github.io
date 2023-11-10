@@ -448,119 +448,149 @@ h2.adicionar{
   /*Fim do corpo da página*/
 
 /*Inicio footer*/
-footer{ 
+footer {
   background-color: #0476D9;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-img.Rede_Social{
+
+img.Rede_Social {
   width: 4rem;
   margin-left: 4rem;
 }
-div.Logos{
+
+div.Logos {
   display: flex;
   justify-content: space-evenly;
 }
-img.Rede_Social{
+
+img.Rede_Social {
   width: 5rem;
 }
-h3.footer,h2.footer{
+
+h3.footer,
+h2.footer {
   text-align: center;
   color: #FFFFFF;
+  font-size: 1.5rem;
 }
 
-ul.footer{
+ul.footer {
   list-style: none;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
-li.footer{
+
+li.footer {
   margin-right: 5rem;
 }
-.ultimo{
+
+.ultimo {
   margin-right: 5rem;
 }
-.penultimo{
+
+.penultimo {
   margin-right: 5rem;
 }
-a.footer{
+
+a.footer {
   text-decoration: none;
 }
-div.anchors{
+
+div.anchors {
   display: flex;
 }
-@media (min-width: 1000px){
- 
+div.corpo{
+  margin-bottom: 10rem;
 }
-@media (max-width: 900px) and (min-width:701px){
-  ul.footer{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-     }
-  div.anchors{
-      justify-self: center;
-      margin-top: 0.5rem;
-  }
-}
-@media (max-width: 700px) and (min-width:500px) {
-  
-}
-@media (min-width : 350px) and (max-width: 400px) {
-  ul.footer{
-    justify-content: center;
-   }
-   h2.footer{
-    font-size: 1rem;
-   }
-   li.footer{
-    width: 2rem;
+
+@media (min-width: 1000px) {}
+
+@media (max-width: 900px) and (min-width:701px) {
+  ul.footer {
     display: flex;
-    justify-content: center;
-   }
-   .ultimo{
-    margin-right: 0px;
-   }
-   .penultimo{
-    margin-right: 0px;
-   }
-   div.anchors{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.anchors {
     justify-self: center;
     margin-top: 0.5rem;
   }
-  img.Rede_Social{
+}
+
+@media (max-width: 700px) and (min-width:500px) {}
+
+@media (min-width : 350px) and (max-width: 400px) {
+  ul.footer {
+    justify-content: center;
+  }
+
+  h2.footer {
+    font-size: 1rem;
+  }
+
+  li.footer {
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ultimo {
+    margin-right: 0px;
+  }
+
+  .penultimo {
+    margin-right: 0px;
+  }
+
+  div.anchors {
+    justify-self: center;
+    margin-top: 0.5rem;
+  }
+
+  img.Rede_Social {
     width: 4rem;
     margin-left: 4rem;
   }
 }
+
 @media (max-width: 450px) and (min-width:400px) {
- ul.footer{
-  justify-content: center;
- }
- h2.footer{
-  font-size: 1rem;
- }
- li.footer{
-  width: 2rem;
-  display: flex;
-  justify-content: center;
- }
- .ultimo{
-  margin-right: 0px;
- }
- .penultimo{
-  margin-right: 0px;
- }
- div.anchors{
-  justify-self: center;
-  margin-top: 0.5rem;
+  ul.footer {
+    justify-content: center;
+  }
+
+  h2.footer {
+    font-size: 1rem;
+  }
+
+  li.footer {
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ultimo {
+    margin-right: 0px;
+  }
+
+  .penultimo {
+    margin-right: 0px;
+  }
+
+  div.anchors {
+    justify-self: center;
+    margin-top: 0.5rem;
+  }
+
+  img.Rede_Social {
+    width: 4rem;
+    margin-left: 4rem;
+  }
 }
-img.Rede_Social{
-  width: 4rem;
-  margin-left: 4rem;
-}
-}
+
 /*Fim Fotter*/
+
