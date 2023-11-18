@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/cadastro.css">
     <title>Criatil</title>
     <link rel="icon" type="image/x-icon" href="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png">
+    <link rel="stylesheet" href="CSS/heade&footer.css">
 </head>
 <body>
     
@@ -52,12 +53,30 @@
         <input type="email" placeholder="E-mail" required><br>
         <input type="password" placeholder="Senha" required><br>
         <input type="password" placeholder="Confirmar Senha" required><br>
-        <input type="tel" placeholder="Telefone (opcional)"><br>
-        <button type="submit">Concluir</button>
+        <input type="tel" placeholder="Telefone (opcional)" id="telefone"><br>
+        <button type="submit" onclick="alerta()">Concluir</button>
     </form>
 
 </main>
     </div>
+     <!--JAVA LIBRAS-->
+     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+     new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script>
+   function alerta() {
+     Swal.fire({
+title: "Cadastrado com sucesso",
+icon: "success",
+});
+   }
+
+   $("#telefone").mask("+55(00)00000-0000");
+ </script>
 <footer>
     <div class="Redes_Sociais"><!--Inclui titulo e logo das redes sociais-->
         <div> 
@@ -73,11 +92,6 @@
         </div>
         </div>
     </div>
-    <!--JAVA LIBRAS-->
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
 <!--Anchors do footer-->
 
         <ul class="footer">

@@ -363,7 +363,8 @@ div.anchors {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center
+    justify-content: center;
+    margin-left: 1rem;
     }
 .caixa1{
     width: 10rem;
