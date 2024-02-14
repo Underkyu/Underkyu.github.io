@@ -10,30 +10,134 @@
 </head>
 <body>
     <header>
+        <img src="Imagens/Header/menu-hamburguer.png" alt="Menu Sanduiche" class="sanduiche" onclick="block()"> <!--Icone de menu sanduiche-->
+
+        <div class="menu_sanduiche" id="menu_sanduiche"> <!--Conteudo do menu sanduiche-->
+            <img src="Imagens/Header/cruz.png" alt="Sair" onclick="block()" class="Cruz">
+            <ul class="sanduiche pequeno" style="margin-bottom: 3rem;">
+                
+                <div class="opcao_sanduiche">
+                    <a href="cadastro.html" class="sanduiche">
+                        <img src="Imagens/Header/perfil_branco.png" alt="Cadastro" class="representacao">
+                        <li class="sanduiche">Cadastre-se</li>   
+                    </a>
+                </div>
+            
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="login.html" class="sanduiche">
+                <img src="Imagens/Header/login_branco.png" alt="Login" class="representacao">
+                <li class="sanduiche">Entrar</li>
+            </a>
+            </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="carrinho.html" class="sanduiche">
+                <img src="Imagens/Header/carrinho.png" alt="Carrinho" class="representacao">
+                <li class="sanduiche">Carrinho</li>
+                </a>
+            </div>
+            </ul>
+            <ul class="sanduiche">
+                <div class="opcao_sanduiche">
+                    <a href="filtro.html" class="sanduiche">
+                    <img src="Imagens/Header/teddy-bear.png" alt="Urso de Pelucia" class="representacao">
+                    <li class="sanduiche">Explorar catalogo</li>
+                </a>   
+                </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="contato.html" class="sanduiche">
+                <img src="Imagens/Header/chamada-telefonica.png" alt="Telefone tocando" class="representacao">
+                <li class="sanduiche">Contatos</li>
+            </a>
+            </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="contato.html" class="sanduiche">
+                <img src="Imagens/Header/comentarios-pergunta.png" alt="Duvida" class="representacao">
+                <li class="sanduiche">Sac</li>
+                </a>
+            </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="https://www.instagram.com/toys_criatil/" class="sanduiche">
+                <img src="Imagens/Footer/instagram.png" alt="Instagram" class="representacao">
+                <li class="sanduiche">Instagram</li>
+            </a>
+            </div>
+            </ul>
+            <div class="Criatil">
+                <div style="display: flex;align-items: center;">
+                <img src="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png" alt="Logo Criatil" class="Criatil">
+                <h4 class="Criatil">Criatil 2024</h4>
+                </div>
+            </div>
+        </div>
+
         <!--Logo Criatil-->
+        <a href="index.html">
         <img src="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png" alt="Logo Criatil" class="Logo">
+        </a>
+
         <!--Anchors que levam para outras páginas-->
         <ul class="header">
-            <li class="header"><a href="index.html" class="header">Home</a></li>
             <li class="header"><a href="filtro.html" class="header">Explorar catalogo</a></li>
             <li class="header"><a href="contato.html" class="header">Contatos</a></li>
+            <li class="header"><a href="index.html" class="header">Sac</a></li>
             <li class="header"><a href="https://www.instagram.com/toys_criatil/" class="header">Instagram</a></li>
         </ul>
-        <input type="text" placeholder="Encontre seu brinquedo"> <!--Pesquisar-->
-        <div class="button"><!--Botões de login, cadastro e carrinho-->
         
-        <!--login-->
-        <a href="login.html">
-        <button class="in_out"><img src="Imagens/Header/Login.png" alt="Entrar" class="button" a href="login.html"><h4 class="button">Entrar</h4></button>
-        </a>
-        <!--Cadastro-->
-        <a href="cadastro.html">
-        <button class="in_out_dois"><img src="Imagens/Header/Cadastro.png" alt="Cadastrar" class="button" a href="cadastro.html"><h4 class="button">Cadastrar</h4></button>
-        </a><!--Carrinho-->
-        <a href="carrinho.html">
-        <button class="carrinho"><img src="Imagens/Header/carrinho.png" alt="Carrinho" class="carrinho" a href="carrinho.html"></button>
-        </a>
-    </div>
+        <input type="text" placeholder="Encontre seu brinquedo" class="pesquisa"> <!--Pesquisar-->
+
+            
+            <div class="Perfil" onmouseover="menuAparece('menu')" onmouseleave="menuDesaparece('menu'), menuDesaparece('dados_login'),menuAparece('login'), menuAparece('cadastro'), menuDesaparece('dados_cadastro')"><!--Div que contem as opções de login e cadastro-->
+                
+                <img src="Imagens/Header/Perfil.png" alt="Perfil" class="Perfil" id="Perfil">
+                
+                <div class="menu" id="menu">
+                <!--login-->
+                <div class="login" id="login">
+        
+            <button class="in_out" onclick="menuAparece('dados_login'), menuDesaparece('cadastro'), menuDesaparece('login')"><img src="Imagens/Header/Login.png" alt="Entrar" class="button" a href="login.html"><h4 class="button">Entrar</h4></button>
+            </div>
+            <!--Cadastro-->
+            <div class="cadastro" id="cadastro">
+            <button class="in_out_dois"  onclick="menuAparece('dados_cadastro'), menuDesaparece('cadastro'), menuDesaparece('login')"><img src="Imagens/Header/Cadastro.png" alt="Cadastrar" class="button" a href="cadastro.html"><h4 class="button">Cadastrar</h4></button>
+            </div>
+            <div class="dados_login" id="dados_login">
+                <h4 class="login">Email</h4>
+                <input type="text" placeholder="Insira seu Email" class="login">
+                <h4 class="login">Senha</h4>
+                <input type="text" placeholder="Insira sua senha" class="login">
+            </div>
+            <div class="dados_cadastro" id="dados_cadastro">
+                
+                <h4 class="cadastro">Nome</h4>
+                <input type="text" placeholder="Insira seu nome" class="cadastro">
+                
+                <h4 class="cadastro">Email</h4>
+                <input type="text" placeholder="Insira seu Email" class="cadastro">
+                
+                <h4 class="cadastro">Telefone</h4>
+                <input type="text" placeholder="Insira seu telefone" class="cadastro">
+                
+                <h4 class="cadastro">Senha</h4>
+                <input type="password" placeholder="Insira sua senha" class="cadastro">
+                
+                <h4 class="cadastro">Confirmar Senha</h4>
+                <input type="password" placeholder="Confirme sua senha" class="cadastro">
+            </div>
+                </div>
+            </div>
+            <a href="carrinho.html">
+            <img src="Imagens/Header/carrinho.png" alt="Carrinho" class="carrinho">
+            </a>
+
+            <div class="botao_stick">
+                <img src="Imagens/Header/menu-hamburguer.png" alt="Menu sanduiche" class="botao_stick" onclick="block()">
+            </div>
+    
     </header>
     <!-- PLUG-IN LIBRAS-->
 <div vw class="enabled">

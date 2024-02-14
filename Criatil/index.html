@@ -8,34 +8,139 @@
     <link rel="stylesheet" href="./CSS/principal.css">
     <link rel="stylesheet" href="CSS/heade&footer.css">
     <script src="./JS/glider.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png">
 </head>
 <body>
     <header>
+        <img src="Imagens/Header/menu-hamburguer.png" alt="Menu Sanduiche" class="sanduiche" onclick="block()"> <!--Icone de menu sanduiche-->
+
+        <div class="menu_sanduiche" id="menu_sanduiche"> <!--Conteudo do menu sanduiche-->
+            <img src="Imagens/Header/cruz.png" alt="Sair" onclick="block()" class="Cruz">
+            <ul class="sanduiche pequeno" style="margin-bottom: 3rem;">
+                
+                <div class="opcao_sanduiche">
+                    <a href="cadastro.html" class="sanduiche">
+                        <img src="Imagens/Header/perfil_branco.png" alt="Cadastro" class="representacao">
+                        <li class="sanduiche">Cadastre-se</li>   
+                    </a>
+                </div>
+            
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="login.html" class="sanduiche">
+                <img src="Imagens/Header/login_branco.png" alt="Login" class="representacao">
+                <li class="sanduiche">Entrar</li>
+            </a>
+            </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="carrinho.html" class="sanduiche">
+                <img src="Imagens/Header/carrinho.png" alt="Carrinho" class="representacao">
+                <li class="sanduiche">Carrinho</li>
+                </a>
+            </div>
+            </ul>
+            <ul class="sanduiche">
+                <div class="opcao_sanduiche">
+                    <a href="filtro.html" class="sanduiche">
+                    <img src="Imagens/Header/teddy-bear.png" alt="Urso de Pelucia" class="representacao">
+                    <li class="sanduiche">Explorar catalogo</li>
+                </a>   
+                </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="contato.html" class="sanduiche">
+                <img src="Imagens/Header/chamada-telefonica.png" alt="Telefone tocando" class="representacao">
+                <li class="sanduiche">Contatos</li>
+            </a>
+            </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="contato.html" class="sanduiche">
+                <img src="Imagens/Header/comentarios-pergunta.png" alt="Duvida" class="representacao">
+                <li class="sanduiche">Sac</li>
+                </a>
+            </div>
+            <hr>
+            <div class="opcao_sanduiche">
+                <a href="https://www.instagram.com/toys_criatil/" class="sanduiche">
+                <img src="Imagens/Footer/instagram.png" alt="Instagram" class="representacao">
+                <li class="sanduiche">Instagram</li>
+            </a>
+            </div>
+            </ul>
+            <div class="Criatil">
+                <div style="display: flex;align-items: center;">
+                <img src="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png" alt="Logo Criatil" class="Criatil">
+                <h4 class="Criatil">Criatil 2024</h4>
+                </div>
+            </div>
+        </div>
+
         <!--Logo Criatil-->
+        <a href="index.html">
         <img src="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png" alt="Logo Criatil" class="Logo">
+        </a>
+
         <!--Anchors que levam para outras páginas-->
         <ul class="header">
-            <li class="header"><a href="index.html" class="header">Home</a></li>
             <li class="header"><a href="filtro.html" class="header">Explorar catalogo</a></li>
             <li class="header"><a href="contato.html" class="header">Contatos</a></li>
+            <li class="header"><a href="index.html" class="header">Sac</a></li>
             <li class="header"><a href="https://www.instagram.com/toys_criatil/" class="header">Instagram</a></li>
         </ul>
-        <input type="text" placeholder="Encontre seu brinquedo"> <!--Pesquisar-->
-        <div class="button"><!--Botões de login, cadastro e carrinho-->
         
-        <!--login-->
-        <a href="login.html">
-        <button class="in_out"><img src="Imagens/Header/Login.png" alt="Entrar" class="button" a href="login.html"><h4 class="button">Entrar</h4></button>
-        </a>
-        <!--Cadastro-->
-        <a href="cadastro.html">
-        <button class="in_out_dois"><img src="Imagens/Header/Cadastro.png" alt="Cadastrar" class="button" a href="cadastro.html"><h4 class="button">Cadastrar</h4></button>
-        </a><!--Carrinho-->
-        <a href="carrinho.html">
-        <button class="carrinho"><img src="Imagens/Header/carrinho.png" alt="Carrinho" class="carrinho" a href="carrinho.html"></button>
-        </a>
-    </div>
+        <input type="text" placeholder="Encontre seu brinquedo" class="pesquisa"> <!--Pesquisar-->
+
+            
+            <div class="Perfil" onmouseover="menuAparece('menu')" onmouseleave="menuDesaparece('menu'), menuDesaparece('dados_login'),menuAparece('login'), menuAparece('cadastro'), menuDesaparece('dados_cadastro')"><!--Div que contem as opções de login e cadastro-->
+                
+                <img src="Imagens/Header/Perfil.png" alt="Perfil" class="Perfil" id="Perfil">
+                
+                <div class="menu" id="menu">
+                <!--login-->
+                <div class="login" id="login">
+        
+            <button class="in_out" onclick="menuAparece('dados_login'), menuDesaparece('cadastro'), menuDesaparece('login')"><img src="Imagens/Header/Login.png" alt="Entrar" class="button" a href="login.html"><h4 class="button">Entrar</h4></button>
+            </div>
+            <!--Cadastro-->
+            <div class="cadastro" id="cadastro">
+            <button class="in_out_dois"  onclick="menuAparece('dados_cadastro'), menuDesaparece('cadastro'), menuDesaparece('login')"><img src="Imagens/Header/Cadastro.png" alt="Cadastrar" class="button" a href="cadastro.html"><h4 class="button">Cadastrar</h4></button>
+            </div>
+            <div class="dados_login" id="dados_login">
+                <h4 class="login">Email</h4>
+                <input type="text" placeholder="Insira seu Email" class="login">
+                <h4 class="login">Senha</h4>
+                <input type="text" placeholder="Insira sua senha" class="login">
+            </div>
+            <div class="dados_cadastro" id="dados_cadastro">
+                
+                <h4 class="cadastro">Nome</h4>
+                <input type="text" placeholder="Insira seu nome" class="cadastro">
+                
+                <h4 class="cadastro">Email</h4>
+                <input type="text" placeholder="Insira seu Email" class="cadastro">
+                
+                <h4 class="cadastro">Telefone</h4>
+                <input type="text" placeholder="Insira seu telefone" class="cadastro">
+                
+                <h4 class="cadastro">Senha</h4>
+                <input type="password" placeholder="Insira sua senha" class="cadastro">
+                
+                <h4 class="cadastro">Confirmar Senha</h4>
+                <input type="password" placeholder="Confirme sua senha" class="cadastro">
+            </div>
+                </div>
+            </div>
+            <a href="carrinho.html">
+            <img src="Imagens/Header/carrinho.png" alt="Carrinho" class="carrinho">
+            </a>
+
+            <div class="botao_stick">
+                <img src="Imagens/Header/menu-hamburguer.png" alt="Menu sanduiche" class="botao_stick" onclick="block()">
+            </div>
+    
     </header>
     
     <!--Inicio corpo do site-->
@@ -50,352 +155,109 @@
       <div class="vw-plugin-top-wrapper"></div>
     </div>
     </div>
-    <div id="app">
-        <div style="display: flex;justify-content: center;">
-        <div class="filtro_container">
-      <div id="glider-1" class="glider-contain">
-        <div class="glider">
-            <div id="filtro">
-                <img src="Imagens/Centro/Filtros/ícone bebê 2.png" alt="Bebês" class="filtro">
-                <h5>Bebês</h5>
-                </div>
+
+
+    <div class="swiper swiperSlide" style="width: 60%;">
+        <div class="swiper-wrapper">
+          
+            <div class="swiper-slide">
                 <div id="filtro">
-                    <img src="Imagens/Centro/Filtros/ícone crianças.png" alt="Crianças" class="filtro2">
-                    <h5>Crianças</h5>
+                    <img src="Imagens/Centro/Filtros/ícone bebê 2.png" alt="Bebês" class="filtro">
+                    <h5>Bebês</h5>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div id="filtro">
-                        <img src="Imagens/Centro/Filtros/ícone deficiente auditivo.png" alt="Deficiente auditivo" class="filtro3">
+                        <img src="Imagens/Centro/Filtros/ícone crianças.png" alt="Crianças" class="filtro">
+                        <h5>Crianças</h5>
+                        </div>
+
+                </div>
+                <div class="swiper-slide">
+
+                    <div id="filtro">
+                        <img src="Imagens/Centro/Filtros/ícone deficiente auditivo.png" alt="Deficiente auditivo" class="filtro">
                         <h5>Deficiente auditivo</h5>
                         </div>
-                        <div id="filtro">
-                            <img src="Imagens/Centro/Filtros/ícone deficiente visual.png" alt="Deficiente visual" class="filtro4">
-                            <h5>Deficiente visual</h5>
-                            </div>
-                            <div id="filtro">
-                                <img src="Imagens/Centro/Filtros/ícone jovens 2.png" alt="Jovens" class="filtro">
-                                <h5>Jovens</h5>
-                            </div>
-        </div>
+                </div>
+                <div class="swiper-slide">
 
-        <button aria-label="Previous" class="glider-prev">«</button>
-        <button aria-label="Next" class="glider-next">»</button>
-        <div role="tablist" class="dots"></div>
+                    <div id="filtro">
+                        <img src="Imagens/Centro/Filtros/ícone deficiente visual.png" alt="Deficiente visual" class="filtro">
+                        <h5>Deficiente visual</h5>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+
+                    <div id="filtro">
+                        <img src="Imagens/Centro/Filtros/ícone jovens 2.png" alt="Jovens" class="filtro">
+                        <h5>Jovens</h5>
+                    </div>
+                </div>
+    
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
-        </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".swiperSlide", {
+          slidesPerView: 4,
+          loop : true,
+          spaceBetween: 60,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+    325: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 2.5,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    1024: {
+        slidesPerView: 3.5,
+        spaceBetween: 60,
+    },
+    1280: {
+        slidesPerView: 4,
+        spaceBetween: 60,
+    },
+  },
+        });
+      </script>
 
-      <div style="display: flex;justify-content: center;">
-      <section class="Slider">
-      <div id="glider-2" class="glider-contain">
-        <div class="glider">
-          <!--Card-->
-          <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                        <img src="Imagens/Centro/Ralsei.jpeg" alt="Pelúcia Ralse" class="Imagem_produto">
-                    </a>
-                    <div class="div_selo">
-                        <img src="Imagens/Centro/Selos/10.png" class="imagem_selodesc">
-                    </div>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Pelúcia Ralsei</h1>
-            <p class="preco "><s>R$99,99</s></p>
-            <p class="preco">R$89,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div>
-         <!--Card-->
-         <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                    <img src="Imagens/Centro/CuboMagicoTatil.png" alt="Cubo Mágico Tátil" class="Imagem_produto">
-                    </a>
-                    <div class="div_selo">
-                        <img src="Imagens/Centro/Selos/selo final olho.png" class="imagem_selo">
-                    </div>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Cubo Mágico Tátil</h1>
-            <br>
-            <p class="preco">R$49,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div>
-         <!--Card-->
-         <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                    <img src="Imagens/Centro/Luffy.png" alt="Luffy Funko Pop" class="Imagem_produto">
-                    </a>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Luffy Funko Pop</h1>
-            <br>
-            <p class="preco">R$149,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div>
-         <!--Card-->
-         <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                    <img src="Imagens/Centro/UnoBraille.png" alt="Uno Braille" class="uno Braille Edition">
-                    </a>
-                    <div class="div_selo">
-                        <img src="Imagens/Centro/Selos/selo final olho.png" class="imagem_selo">
-                    </div>
-                    <div class="div_selo">
-                        <img src="Imagens/Centro/Selos/20.png" class="imagem_selodesc">
-                    </div>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Uno Braille Edition</h1>
-            <p class="preco primeiro"><s>R$24,99</s></p>
-            <p class="preco">R$19,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div>
-         <!--Card-->
-         <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                    <img src="Imagens/Centro/Bluey.png" alt="Bluey pelúcia" class="Imagem_produto">
-                    </a>
-                    <div class="div_selo">
-                        <img src="Imagens/Centro/Selos/20.png" class="imagem_selodesc">
-                    </div>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Pelúcia Bluey</h1>
-            <p class="preco primeiro"><s>R$99,99</s></p>
-            <p class="preco">R$79,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div>
-         <!--Card-->
-         <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                    <img src="Imagens/Centro/Amongus.png" alt="Ralsei plush" class="Imagem_produto">
-                    </a>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Boneco Among us</h1>
-            <br>
-            <p class="preco">R$59,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div> <!--Card-->
-        <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                    <img src="Imagens/Centro/AlfabetoLibras.png" alt="Ralsei plush" class="Imagem_produto">
-                    </a>
-                    <div class="div_selo">
-                        <img src="Imagens/Centro/Selos/selo final ouvido.png" class="imagem_selo">
-                    </div>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Alfabeto em libras</h1>
-            <br>
-            <p class="preco">R$39,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div> <!--Card-->
-        <div class="Card">
-            <!--Imagem-->
-            <div class="Imagem_container">
-                <div class="Imagem">
-                    <a href="produtos.html" class="a_produto">
-                    <img src="Imagens/Centro/Coup.png" alt="Coup card game" class="Imagem_produto">
-                    </a>
-                    <div class="div_selo">
-                        <img src="Imagens/Centro/Selos/25.png" class="imagem_selodesc">
-                    </div>
-                </div>
-            </div>
-            <!--Texto do card-->
-            <h1 class="Nome_Produto">Coup Card Game</h1>
-            <p class="preco primeiro"><s>R$99,99</s></p>
-            <p class="preco">R$74,99</p>
-            <!--Botão "Comprar agora"-->
-            <div class="Comprar_Agora primeiro">
-                <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-            </div>
-        </div>
-        </div>
-
-        <button aria-label="Previous" class="glider-prev">«</button>
-        <button aria-label="Next" class="glider-next">»</button>
-        <div role="tablist" class="dots"></div>
-      </div>
-      </section>
-    </div>
-    </div>
-
-
-
-
-
-    <div class="video">
 
         <div class="Titulo">
-            <h2>Vídeos</h2>
+            <h2>Mais Vendidos</h2>
         </div>
-        <div class="iframes">
-
-            <iframe src="https://www.youtube.com/embed/KEDKrFzvtmI" width="400" height="600" class="video"></iframe>
-             <iframe src="https://www.youtube.com/embed/nEnLsZL-ibw" width="400" height="600" class="video2"></iframe>
-             <iframe src="https://www.youtube.com/embed/HehqO9YAyCs" width="400" height="600" class="video3"></iframe>
-        </div>
-    </div>
-                
-        <script>
-            new Glider(document.querySelector('#glider'), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: '#dots',
-  arrows: {
-    prev: '#glider-prev',
-    next: '#glider-next'
-  }
-});
-        </script>
-
-        <div style="display: flex;justify-content: center;">
-            <!--SLider-->
-            <section class="Slider">
-                <!--Titulo-->
-                <h3 class="Titulo">Novidades</h3>
-                <div class="glider-contain">
-                    <div class="glider2">
-                <!--Card-->
-                <div class="Card">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+                <div class="swiper-slide">
+                    <!--Card-->
+                  <div class="Card">
                     <!--Imagem-->
                     <div class="Imagem_container">
                         <div class="Imagem">
-                            <a href="produtos.html">
-                            <img src="Imagens/Centro/Bluey.png" alt="Bluey pelúcia" class="Imagem_produto">
-                            </a>
-                            <div class="div_selo">
-                                <img src="Imagens/Centro/Selos/20.png" class="imagem_selodesc">
-                            </div>
-                        </div>
-                    </div>
-                    <!--Texto do card-->
-                    <h1 class="Nome_Produto">Pelúcia Bluey</h1>
-                    <p class="preco primeiro"><s>R$99,99</s></p>
-                    <p class="preco">R$79,99</p>
-                    <!--Botão "Comprar agora"-->
-                    <div class="Comprar_Agora primeiro">
-                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-                    </div>
-                </div>
-                 <!--Card-->
-                 <div class="Card">
-                    <!--Imagem-->
-                    <div class="Imagem_container">
-                        <div class="Imagem">
-                            <a href="produtos.html">
-                            <img src="Imagens/Centro/Amongus.png" alt="Ralsei plush" class="Imagem_produto">
-                            </a>
-                        </div>
-                    </div>
-                    <!--Texto do card-->
-                    <h1 class="Nome_Produto">Boneco Among us</h1>
-                    <br>
-                    <p class="preco">R$59,99</p>
-                    <!--Botão "Comprar agora"-->
-                    <div class="Comprar_Agora primeiro">
-                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-                    </div>
-                </div> <!--Card-->
-                <div class="Card">
-                    <!--Imagem-->
-                    <div class="Imagem_container">
-                        <div class="Imagem">
-                            <a href="produtos.html">
-                            <img src="Imagens/Centro/AlfabetoLibras.png" alt="Ralsei plush" class="Imagem_produto">
-                            </a>
-                            <div class="div_selo">
-                                <img src="Imagens/Centro/Selos/selo final ouvido.png" class="imagem_selo">
-                            </div>
-                        </div>
-                    </div>
-                    <!--Texto do card-->
-                    <h1 class="Nome_Produto">Alfabeto em libras</h1>
-                    <br>
-                    <p class="preco">R$39,99</p>
-                    <!--Botão "Comprar agora"-->
-                    <div class="Comprar_Agora primeiro">
-                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-                    </div>
-                </div> <!--Card-->
-                <div class="Card">
-                    <!--Imagem-->
-                    <div class="Imagem_container">
-                        <div class="Imagem">
-                            <a href="produtos.html">
-                            <img src="Imagens/Centro/Coup.png" alt="Coup card game" class="Imagem_produto">
-                            </a>
-                            <div class="div_selo">
-                                <img src="Imagens/Centro/Selos/25.png" class="imagem_selodesc">
-                            </div>
-                        </div>
-                    </div>
-                    <!--Texto do card-->
-                    <h1 class="Nome_Produto">Coup Card Game</h1>
-                    <p class="preco primeiro"><s>R$99,99</s></p>
-                    <p class="preco">R$74,99</p>
-                    <!--Botão "Comprar agora"-->
-                    <div class="Comprar_Agora primeiro">
-                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
-                    </div>
-                </div>
-                <!--Card-->
-                <div class="Card">
-                    <!--Imagem-->
-                    <div class="Imagem_container">
-                        <div class="Imagem">
-                            <a href="produtos.html">
-                            <img src="Imagens/Centro/Ralsei.jpeg" alt="Pelúcia Ralse" class="Imagem_produto">
+                            <a href="produtos.html" class="a_produto">
+                                <img src="Imagens/Centro/Ralsei.jpeg" alt="Pelúcia Ralse" class="Imagem_produto">
                             </a>
                             <div class="div_selo">
                                 <img src="Imagens/Centro/Selos/10.png" class="imagem_selodesc">
@@ -404,19 +266,23 @@
                     </div>
                     <!--Texto do card-->
                     <h1 class="Nome_Produto">Pelúcia Ralsei</h1>
-                    <p class="preco primeiro"><s>R$99,99</s></p>
+                    <p class="preco "><s>R$99,99</s></p>
                     <p class="preco">R$89,99</p>
                     <!--Botão "Comprar agora"-->
                     <div class="Comprar_Agora primeiro">
                         <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
                     </div>
                 </div>
-                 <!--Card-->
+        
+                </div>
+                
+                <div class="swiper-slide">
+                <!--Card-->
                  <div class="Card">
                     <!--Imagem-->
                     <div class="Imagem_container">
                         <div class="Imagem">
-                            <a href="produtos.html">
+                            <a href="produtos.html" class="a_produto">
                             <img src="Imagens/Centro/CuboMagicoTatil.png" alt="Cubo Mágico Tátil" class="Imagem_produto">
                             </a>
                             <div class="div_selo">
@@ -433,12 +299,16 @@
                         <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
                     </div>
                 </div>
+        
+                </div>
+        
+                <div class="swiper-slide">
                  <!--Card-->
                  <div class="Card">
                     <!--Imagem-->
                     <div class="Imagem_container">
                         <div class="Imagem">
-                            <a href="produtos.html">
+                            <a href="produtos.html" class="a_produto">
                             <img src="Imagens/Centro/Luffy.png" alt="Luffy Funko Pop" class="Imagem_produto">
                             </a>
                         </div>
@@ -452,12 +322,16 @@
                         <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
                     </div>
                 </div>
+        
+                </div>
+        
+                <div class="swiper-slide">
                  <!--Card-->
                  <div class="Card">
                     <!--Imagem-->
                     <div class="Imagem_container">
                         <div class="Imagem">
-                            <a href="produtos.html">
+                            <a href="produtos.html" class="a_produto">
                             <img src="Imagens/Centro/UnoBraille.png" alt="Uno Braille" class="uno Braille Edition">
                             </a>
                             <div class="div_selo">
@@ -477,27 +351,437 @@
                         <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
                     </div>
                 </div>
+        
+                </div>
+        
+                <div class="swiper-slide">
+                 <!--Card-->
+                 <div class="Card">
+                    <!--Imagem-->
+                    <div class="Imagem_container">
+                        <div class="Imagem">
+                            <a href="produtos.html" class="a_produto">
+                            <img src="Imagens/Centro/Bluey.png" alt="Bluey pelúcia" class="Imagem_produto">
+                            </a>
+                            <div class="div_selo">
+                                <img src="Imagens/Centro/Selos/20.png" class="imagem_selodesc">
+                            </div>
+                        </div>
                     </div>
-                  
-                    <button aria-label="Previous" class="glider2-prev">«</button>
-                    <button aria-label="Next" class="glider2-next">»</button>
-                    <div role="tablist" class="dots2"></div>
-                  </div>
-                  <script>
-                    new Glider(document.querySelector('.glider2'), {
-              slidesToScroll: 4,
-              slidesToShow: 4,
-              draggable: true,
-              dots: '.dots2',
-              arrows: {
-                prev: '.glider2-prev',
-                next: '.glider2-next'
-              }
-            });
-                </script>
-                  
-            </section>
+                    <!--Texto do card-->
+                    <h1 class="Nome_Produto">Pelúcia Bluey</h1>
+                    <p class="preco primeiro"><s>R$99,99</s></p>
+                    <p class="preco">R$79,99</p>
+                    <!--Botão "Comprar agora"-->
+                    <div class="Comprar_Agora primeiro">
+                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                    </div>
+                </div>
+        
+                </div>
+        
+                <div class="swiper-slide">
+        
+                 <!--Card-->
+                 <div class="Card">
+                    <!--Imagem-->
+                    <div class="Imagem_container">
+                        <div class="Imagem">
+                            <a href="produtos.html" class="a_produto">
+                            <img src="Imagens/Centro/Amongus.png" alt="Ralsei plush" class="Imagem_produto">
+                            </a>
+                        </div>
+                    </div>
+                    <!--Texto do card-->
+                    <h1 class="Nome_Produto">Boneco Among us</h1>
+                    <br>
+                    <p class="preco">R$59,99</p>
+                    <!--Botão "Comprar agora"-->
+                    <div class="Comprar_Agora primeiro">
+                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                    </div>
+                </div> 
+                
+                </div>
+        
+                <div class="swiper-slide">
+                <!--Card-->
+                <div class="Card">
+                    <!--Imagem-->
+                    <div class="Imagem_container">
+                        <div class="Imagem">
+                            <a href="produtos.html" class="a_produto">
+                            <img src="Imagens/Centro/AlfabetoLibras.png" alt="Ralsei plush" class="Imagem_produto">
+                            </a>
+                            <div class="div_selo">
+                                <img src="Imagens/Centro/Selos/selo final ouvido.png" class="imagem_selo">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Texto do card-->
+                    <h1 class="Nome_Produto">Alfabeto em libras</h1>
+                    <br>
+                    <p class="preco">R$39,99</p>
+                    <!--Botão "Comprar agora"-->
+                    <div class="Comprar_Agora primeiro">
+                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                    </div>
+                </div> 
+                
+                </div>
+        
+                <div class="swiper-slide">
+                <!--Card-->
+                <div class="Card">
+                    <!--Imagem-->
+                    <div class="Imagem_container">
+                        <div class="Imagem">
+                            <a href="produtos.html" class="a_produto">
+                            <img src="Imagens/Centro/Coup.png" alt="Coup card game" class="Imagem_produto">
+                            </a>
+                            <div class="div_selo">
+                                <img src="Imagens/Centro/Selos/25.png" class="imagem_selodesc">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Texto do card-->
+                    <h1 class="Nome_Produto">Coup Card Game</h1>
+                    <p class="preco primeiro"><s>R$99,99</s></p>
+                    <p class="preco">R$74,99</p>
+                    <!--Botão "Comprar agora"-->
+                    <div class="Comprar_Agora primeiro">
+                        <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                    </div>
+                </div>
+        
+                
+                </div>
+        
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              loop : true,
+              spaceBetween: 60,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+        475: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        640: {
+          slidesPerView: 1.5,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 60,
+        },
+        1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 60,
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+        },
+      },
+            });
+          </script>
+
+
+
+    <div class="video container">
+
+        <div class="Titulo">
+            <h2>Vídeos</h2>
+        </div>
+        <div class="iframes">
+
+            <iframe src="https://www.youtube.com/embed/KEDKrFzvtmI" width="400" height="600" class="video"></iframe>
+             <iframe src="https://www.youtube.com/embed/nEnLsZL-ibw" width="400" height="600" class="video2"></iframe>
+             <iframe src="https://www.youtube.com/embed/HehqO9YAyCs" width="400" height="600" class="video3"></iframe>
+        </div>
+    </div>
+                
+
+
+    <div class="Titulo">
+        <h2>Novidades</h2>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+             <!--Card-->
+             <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                        <img src="Imagens/Centro/Bluey.png" alt="Bluey pelúcia" class="Imagem_produto">
+                        </a>
+                        <div class="div_selo">
+                            <img src="Imagens/Centro/Selos/20.png" class="imagem_selodesc">
+                        </div>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Pelúcia Bluey</h1>
+                <p class="preco primeiro"><s>R$99,99</s></p>
+                <p class="preco">R$79,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div>
+    
+            </div>
+    
+            <div class="swiper-slide">
+    
+             <!--Card-->
+             <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                        <img src="Imagens/Centro/Amongus.png" alt="Ralsei plush" class="Imagem_produto">
+                        </a>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Boneco Among us</h1>
+                <br>
+                <p class="preco">R$59,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div> 
+            
+            </div>
+    
+            <div class="swiper-slide">
+            <!--Card-->
+            <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                        <img src="Imagens/Centro/AlfabetoLibras.png" alt="Ralsei plush" class="Imagem_produto">
+                        </a>
+                        <div class="div_selo">
+                            <img src="Imagens/Centro/Selos/selo final ouvido.png" class="imagem_selo">
+                        </div>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Alfabeto em libras</h1>
+                <br>
+                <p class="preco">R$39,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div> 
+            
+            </div>
+    
+            <div class="swiper-slide">
+            <!--Card-->
+            <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                        <img src="Imagens/Centro/Coup.png" alt="Coup card game" class="Imagem_produto">
+                        </a>
+                        <div class="div_selo">
+                            <img src="Imagens/Centro/Selos/25.png" class="imagem_selodesc">
+                        </div>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Coup Card Game</h1>
+                <p class="preco primeiro"><s>R$99,99</s></p>
+                <p class="preco">R$74,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div>
+    
+            
+            </div>
+            <div class="swiper-slide">
+                <!--Card-->
+              <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                            <img src="Imagens/Centro/Ralsei.jpeg" alt="Pelúcia Ralse" class="Imagem_produto">
+                        </a>
+                        <div class="div_selo">
+                            <img src="Imagens/Centro/Selos/10.png" class="imagem_selodesc">
+                        </div>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Pelúcia Ralsei</h1>
+                <p class="preco "><s>R$99,99</s></p>
+                <p class="preco">R$89,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div>
+    
+            </div>
+            
+            <div class="swiper-slide">
+            <!--Card-->
+             <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                        <img src="Imagens/Centro/CuboMagicoTatil.png" alt="Cubo Mágico Tátil" class="Imagem_produto">
+                        </a>
+                        <div class="div_selo">
+                            <img src="Imagens/Centro/Selos/selo final olho.png" class="imagem_selo">
+                        </div>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Cubo Mágico Tátil</h1>
+                <br>
+                <p class="preco">R$49,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div>
+    
+            </div>
+    
+            <div class="swiper-slide">
+             <!--Card-->
+             <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                        <img src="Imagens/Centro/Luffy.png" alt="Luffy Funko Pop" class="Imagem_produto">
+                        </a>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Luffy Funko Pop</h1>
+                <br>
+                <p class="preco">R$149,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div>
+    
+            </div>
+    
+            <div class="swiper-slide">
+             <!--Card-->
+             <div class="Card">
+                <!--Imagem-->
+                <div class="Imagem_container">
+                    <div class="Imagem">
+                        <a href="produtos.html" class="a_produto">
+                        <img src="Imagens/Centro/UnoBraille.png" alt="Uno Braille" class="uno Braille Edition">
+                        </a>
+                        <div class="div_selo">
+                            <img src="Imagens/Centro/Selos/selo final olho.png" class="imagem_selo">
+                        </div>
+                        <div class="div_selo">
+                            <img src="Imagens/Centro/Selos/20.png" class="imagem_selodesc">
+                        </div>
+                    </div>
+                </div>
+                <!--Texto do card-->
+                <h1 class="Nome_Produto">Uno Braille Edition</h1>
+                <p class="preco primeiro"><s>R$24,99</s></p>
+                <p class="preco">R$19,99</p>
+                <!--Botão "Comprar agora"-->
+                <div class="Comprar_Agora primeiro">
+                    <button class="Comprar_Agora"><h2 class="Comprar_Agora">Comprar Agora</h2></button>
+                </div>
+            </div>
+    
+            </div>
+    
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          loop : true,
+          spaceBetween: 60,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+    475: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    1024: {
+        slidesPerView: 2.5,
+        spaceBetween: 60,
+    },
+    1280: {
+        slidesPerView: 3,
+        spaceBetween: 60,
+    },
+  },
+        });
+      </script>
+
 
             <footer>
                 <div class="Redes_Sociais"><!--Inclui titulo e logo das redes sociais-->
