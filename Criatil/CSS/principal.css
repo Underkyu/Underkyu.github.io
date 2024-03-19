@@ -180,31 +180,23 @@ h5{
   padding-right: 50px;
   margin-bottom: 60px;
 }
-@media (min-width:350px) and (max-width:450px){
-  iframe.video2,iframe.video3{
-    display: none;
-  }
-  img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
-    width: 5rem;
-  }
-  h5{
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  }
-  @media (min-width:1000px) and (max-width:1300px){
-    img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
-      width: 6.25rem;
-    }
-    img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
-      width: 7.5rem;
-    }
-    h5{
-      font-size: 1.4rem;
-      margin-top: 1rem;
-      text-align: center;
-    }
+div.Imagens{/*Div de imagens promocionais*/
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+img.promocional{
+  width: 26rem;
+  height: 28rem;
+}
+div.center{
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
     /* 2xl */
 @media (max-width: 1536px) {
   .container {
@@ -214,22 +206,31 @@ h5{
 
 /* xl */
 @media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
+  img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
+    width: 6.25rem;
+  }
+  img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
+    width: 7.5rem;
+  }
+  h5{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-align: center;
   }
 }
 
 /* lg */
 @media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
+  .segundo{
+    display: none;
   }
 }
 
 /* md */
 @media (max-width: 768px) {
-  .container {
-    max-width: 640px;
+  img.promocional{
+    width: 19rem;
+    height: 21rem;
   }
 }
 
@@ -242,9 +243,20 @@ h5{
 
 /* xs */
 @media (max-width: 475px) {
-  .container {
-    width: 100%;
+  img.filtro,img.filtro2,img.filtro3,img.filtro4,img.filtro5,img.filtro6{
+    width: 5rem;
   }
+  h5{
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .terceiro{
+    display: none;
+  }
+  img.promocional{
+    width: 22rem;
+    height: 24rem;
   }
 }
 /*Fim corpo do site*/

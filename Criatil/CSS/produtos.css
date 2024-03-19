@@ -38,8 +38,8 @@ font-family: "Tauri";
         margin-bottom: 5rem;
     }
     img.Imagem{
-        width: 45rem;
-        height: 40rem;
+        width: 35rem;
+        height: 30rem;
     }
     div.Texto{
         display: flex;
@@ -112,132 +112,154 @@ font-family: "Tauri";
 
     /*Responsividade*/
 
-    @media (min-width:1023px) and (max-width:1281px){
-      button.Imagem{
-        background-color: transparent;
-        width: 5.5rem;
-        height: 5.5rem;
-        border: solid black 3px;
-        margin-left: 2rem;
-    }
-    img.Produto{
-      width: 5rem;
-      height: 5rem;
-  }
-  div.botoes{
-    margin-left: 0.05rem;
+/* 2xl */
+@media (max-width: 1536px) {
+  
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  button.Imagem{
+    background-color: transparent;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: solid black 3px;
+    margin-left: 2rem;
+}
+img.Produto{
+  width: 5rem;
+  height: 5rem;
+}
+div.botoes{
+margin-left: 0.05rem;
 }
 img.Imagem{
-  width: 23.5rem;
-  height: 20rem;
+width: 23.5rem;
+height: 20rem;
 }
 div.Imagem{
-  margin-left: 0rem;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  margin-top: 1rem;
+margin-left: 0rem;
+display: flex;
+align-items: start;
+justify-content: center;
+margin-top: 1rem;
 }
 h1.Titulo{
-  font-weight: 900;
-  font-size: 2rem;
-  margin-top: 1rem;
-  text-align: center;
+font-weight: 900;
+font-size: 2rem;
+margin-top: 1rem;
+text-align: center;
 }
 h4.Estrela{
-  font-size: 1.75rem
+font-size: 1.75rem
 }img.Estrelas{
-  width: 10rem;
-  height: 2rem;
+width: 10rem;
+height: 2rem;
 }
 h2.preco{
-  color: #FFD056;
-  font-size: 2.25rem;
+color: #FFD056;
+font-size: 2.25rem;
 }div.adicionar{
-  display: flex;
-  /*align-items: center;
-  justify-content: center;
-  justify-self: unset;
-  background-color: #0476D9;
-  border-radius: 50px;
-  padding: 0.5rem;
-  width: 95%;*/
-  margin-top: -2.5rem;
+display: flex;
+/*align-items: center;
+justify-content: center;
+justify-self: unset;
+background-color: #0476D9;
+border-radius: 50px;
+padding: 0.5rem;
+width: 95%;*/
+margin-top: -2.5rem;
 }
 img.carrinho2{
-  width: 3.5rem;
+width: 3.5rem;
 }
 h2.adicionar{
-  font-size: 1.8rem;
+font-size: 1.8rem;
 }
-    }
+}
 
-    @media (min-width:350px) and (max-width:450px){
-      div.all_imagens{
-        flex-direction: column-reverse;
-      }
-      div.botoes{
-        display: flex;
-        flex-direction: row;
-        margin-left: 0.15rem;
-    }
-    button.Imagem{
-      background-color: transparent;
-      width: 5.5rem;
-      height: 5.5rem;
-      border: solid black 3px;
-      margin-left: 2rem;
+/* md */
+@media (max-width: 768px) {
+  
+}
+
+/* sm */
+@media (max-width: 640px) {
+  
+}
+
+/* xs */
+@media (max-width: 475px) {
+  div.all_imagens{
+    flex-direction: column-reverse;
   }
-  img.Produto{
-    width: 5rem;
-    height: 5rem;
+  div.botoes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.15rem;
+}
+button.Imagem{
+  background-color: transparent;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: solid black 3px;
+  margin-left: 2rem;
+}
+img.Produto{
+width: 5rem;
+height: 5rem;
 }
 img.Imagem{
-  width: 23.5rem;
-  height: 20rem;
+width: 23.5rem;
+height: 20rem;
 }
 div.Imagem{
-  margin-left: 0rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
+margin-left: 0rem;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
 }
 section.corpo{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
+display: flex;
+flex-direction: column;
+margin-bottom: 5rem;
 }
 div.comprar{
-  background-color: #FFD056;
-  width: 95%;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.1rem;
-  margin-top: 3rem;
+background-color: #FFD056;
+width: 95%;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1.1rem;
+margin-top: 3rem;
 }
 h2.comprar{
-  font-size: 1.75rem;
+font-size: 1.75rem;
 }
 div.adicionar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-self: unset;
-  background-color: #0476D9;
-  border-radius: 50px;
-  padding: 0.5rem;
-  width: 95%;
+display: flex;
+align-items: center;
+justify-content: center;
+justify-self: unset;
+background-color: #0476D9;
+border-radius: 50px;
+padding: 0.5rem;
+width: 95%;
 }
 img.carrinho2{
-  width: 3.5rem;
+width: 3.5rem;
 }
 h2.adicionar{
-  font-size: 1.5rem;
+font-size: 1.5rem;
 }
-    }
+}
   /*Fim do corpo da página*/
 
 

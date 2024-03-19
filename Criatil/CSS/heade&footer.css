@@ -213,6 +213,7 @@ input.pesquisa{
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 10;
   }
   img.botao_stick{
     width: 2rem;
@@ -252,6 +253,7 @@ input.pesquisa{
     width: 100%;
     color: white;
   }
+  
   
   /*Vambora pra responsividade XD*/
  /* 2xl */
@@ -335,7 +337,7 @@ input.pesquisa{
 
 
 /* md */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   div.botao_stick{
     display: flex;
   }
@@ -357,6 +359,22 @@ input.pesquisa{
     width: 100%;
   }
   }
+
+  /* Algumas mudanças realtivas a altura do aparelho*/
+  @media (max-height: 1200px) {
+    div.botao_stick{
+      bottom: 200px;
+      right: 16px;
+    }
+
+  }
+  @media (max-height: 950px) {
+    div.botao_stick{
+      bottom: 25px;
+      right: 50px;
+    }
+  }
+
   /*Inicio footer*/
   footer {
     background-color: #0476D9;
