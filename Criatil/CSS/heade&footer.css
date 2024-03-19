@@ -85,6 +85,15 @@ input.pesquisa{
   margin-left: 2rem;
 }
 
+input.login, input.cadastro{
+  width: 100vh;
+  height: 2.5rem;
+  width: 28rem;
+  align-self: center;
+  border-radius: 50px;
+  border: none;
+}
+
   input::placeholder {/*Customizar place holder do input*/
     font-weight: bold;
     font-size: 1rem;
@@ -126,7 +135,8 @@ input.pesquisa{
     height: fit-content;
     padding: 1rem;
     right: -110px;
-    top: 40px;
+    top: 25px;
+    z-index: 3;
     &:hover{
       display: block;
     }

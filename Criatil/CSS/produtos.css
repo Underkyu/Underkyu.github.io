@@ -110,6 +110,10 @@ font-family: "Tauri";
       font-size: 2rem;
     }
 
+    div.corpo{
+      margin-bottom: 9rem;
+    }
+
     /*Responsividade*/
 
 /* 2xl */

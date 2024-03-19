@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="CSS/sobre nós.css">
+    <link rel="stylesheet" href="CSS/principal.css">
     <link rel="stylesheet" href="CSS/heade&footer.css">
+    <script src="JS/principal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="JS/sobre nós.js"></script>
     <link rel="icon" type="image/x-icon" href="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css" integrity="sha256-nwNjrH7J9zS/Ti4twtWX7OsC5QdQHCIKTv5cLMsGo68=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -143,59 +147,99 @@
                 <img src="Imagens/Header/menu-hamburguer.png" alt="Menu sanduiche" class="botao_stick" onclick="block()">
             </div>
     
-    </header>
-    <br>
-    <!-- PLUG-IN LIBRAS-->
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-    </div>
-    <div class="caixa0">
-        <h1 class="titulo0">SOBRE NÓS</h1>
-        <div class="text0" id="text0">
-            <p>
-                A Criatil é uma empresa que foca todo seu trabalho e recursos em trazer a diversão e alegria da infância
-                para todas as crianças, independente de diferenças ou limitações. <br>
-                Nós da Criatil valorizamos a felicidade e esperiências boas acima de qualquer coisa, e deficiencias não
-                deveriam mudar isso, por isso desde o início
-                sempre focamos em deixar acessível para qualquer pai ou mãe de crianças especiais. <br>
-                Uma deficiencia não deveria ser uma limitação e sim uma diferença a ser respeitada e incluida em
-                qualquer cenário sem nenhum tipo de exclusão. <br>
-                <large>SE DIVIRTA E NUNCA PARE DE SE DIVERTIR</large><br>
-                -Com Carinho e compreensão Equipe Criatil
-            </p>
-        </div>
-        <h1 class="titulo1">Como começamos<div class="seta1">↓</div>
-        </h1>
-        <div class="text1">
-            <p>Depois de muita análise a nossa equipe percebeu que não há muitas lojas dedicadas para acessibilidade e
-                venda
-                de produtos inclusivos para crianças deficientes,
-                sabendo disso a Criatil foi formada, com a ideia de criar uma plataforma segura e acessível para
-                qualquer
-                Pai ou Mãe que já teve ou tem alguma dificuldade em
-                encontrar o brinquedo certo para suas criançãs.
-            </p>
-        </div>
-        <h1 class="titulo2">Nosso Website<div class="seta2">↓</div>
-        </h1>
-        <div class="text2">
-            <p>Desenvolvido pelo nosso incrível time de programadores este Site
-                foi feito com muito trabalho duro e dedicação, para criar uma interface
-                não só agradável como facilmente navegavel e intuitiva.<br>
-                nossos desenvolvedores sempre estão se esforçando para criar a melhor esperiência possível
-                até para aqueles com nenhuma esperiência com a tecnologia.
-            </p>
-        </div>
-        <div class="arealogo">
-        <img title="Nossa logo" src="Imagens/Header/Logo_1-removebg-preview_waifu2x_art_noise1_scale (1).png" alt="logo criatil" class="imgcriatil">
-        <div class="disclogo">Nossa logo</div>
-    </div>
-    </div>
-    <br>
-    <footer>
+</header>
+    <!-- SOBRE NÓS -->
+    <main>
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <ul class="verti-timeline list-unstyled" dir="ltr">
+                                    <li class="event-list">
+                                        <div class="timeline-icon">
+                                            <i class="mdi mdi-adjust bg-success"></i>
+                                        </div>
+                                        <div class="event-content p-4">
+                                                <h5 class="mt-0 mb-3 font-18">Sobre nós..</h5>
+                                                <div class="text-muted">
+                                                <p class="mb-2">A Criatil é uma empresa que foca todo seu trabalho e recursos em trazer a diversão e alegria da infância para todas as crianças, independente de diferenças ou limitações.</p>
+                                                <p class="mb-0">Nós da Criatil valorizamos a criatividade e felicidade da criança acima de tudo, e acreditamos que deficiências não deveriam mudar isso. Portanto, desde o início, sempre focamos em criar uma experiência acessível para qualquer pai ou mãe de crianças com necessidades especiais.</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-date bg-primary">
+                                            <h5 class="mt-0" id="dia">01</h5>
+                                            <p class="mb-0 text-white-50" id="dia"></p>
+                                        </div>
+                                    </li>
+            
+                                    <li class="event-list">
+                                        <div class="timeline-icon">
+                                            <i class="mdi mdi-adjust bg-danger"></i>
+                                        </div>
+                                        <div class="event-content p-4">
+                                            <h5 class="mt-0 mb-3 font-18">Nosso começo</h5>
+                                            <div class="text-muted">
+                                                <p>Depois de muita análise, a nossa equipe viu a brecha no espaço para lojas com produtos mais acessíveis e com esse conhecimento a Criatil foi formada, com a ideia de criar uma plataforma segura e acessível para qualquer pai ou mãe que já teve ou tem alguma dificuldade em encontrar o brinquedo certo para suas crianças, começando pelo Instagram.</p>
+                                                <button type="button" class="btn btn-primary waves-effect waves-light"><a href="https://www.instagram.com/toys_criatil/" style="color: white; text-decoration: none;">Nosso Instagram</a></button>
+                                            </div>
+                                        </div>
+                                        <div class="event-date bg-primary">
+                                            <h5 class="mt-0" id="dia">02</h5>
+                                            <p class="mb-0 text-white-50" id="dia"></p>
+                                        </div>
+                                    </li>
+            
+                                    <li class="event-list">
+                                        <div class="timeline-icon">
+                                            <i class="mdi mdi-adjust bg-primary"></i>
+                                        </div>
+                                        <div class="event-content p-4">
+                                            <h5 class="mt-0 mb-3 font-18">Nosso website</h5>
+                                            <div class="text-muted">
+                                                <p class="mb-4">Desenvolvido pelo nosso incrível time de programadores, esse site foi feito com muito trabalho duro e dedicação, para criar uma interface não só agradável como facilmente navegável e intuitiva.
+                                                    Nossos desenvolvedores sempre estão se esforçando e evoluindo para criar a melhor experiência possível, até para aqueles com nenhuma experiência com a tecnologia.</p>
+            
+                                            </div>
+                                        </div>
+                                        <div class="event-date bg-primary">
+                                            <h5 class="mt-0" id="dia">03</h5>
+                                            <p class="mb-0 text-white-50" id="dia"></p>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="event-list">
+                                        <div class="timeline-icon">
+                                            <i class="mdi mdi-adjust bg-warning"></i>
+                                        </div>
+                                        <div class="event-content p-4">
+                                            <h5 class="mt-0 mb-3 font-18">Obrigado</h5>
+                                            <div class="text-muted">
+                                                <p class="mb-0">Você chegou ao fim! Obrigado por ler tudo e acompanhar um pouco do nosso trajeto como empresa, e esperamos que você possa continuar nos apoiando continuamente para continuarmos crescendo e proporcionando experiências cada vez melhores para seus filhos. ❤️</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="event-date bg-primary">
+                                            <h5 class="mt-0" id="dia">04</h5>
+                                            <p class="mb-0 text-white-50" id="dia"></p>
+                                        </div>
+                                        
+                                    </li>
+                                </ul>
+            
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
+            </div>
+            </div>
+    </main>
+<footer>
         <div class="Redes_Sociais"><!--Inclui titulo e logo das redes sociais-->
             <div> 
             <div class="Texto"><!--Titulo-->
