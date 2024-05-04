@@ -36,7 +36,7 @@ a{
   position: relative;
 }
 div.corpo{
-  margin-bottom: 10rem;
+  padding-bottom: 16rem;
 }
 .detalhes-produto {
   display: flex;
